@@ -9,16 +9,17 @@
       margin: 0;
       padding: 0;
       position: relative;
+      line-height: 1.6;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 20px;
     }
 
     h1 {
-      font-size : 55px;
+      font-size: 55px;
       color: #FBBBBB;
       text-align: center;
     }
@@ -29,7 +30,7 @@
       text-align: center;
     }
 
-img.logo {
+    img.logo {
       display: block;
       position: absolute;
       top: 20px;
@@ -39,14 +40,14 @@ img.logo {
     }
 
     img.first {
-      max-width: 300px; /* Adjust the size as needed */
+      max-width: 300px;
       height: auto;
-      margin: 20px auto; /* Center the image horizontally and add some space around it */
+      margin: 20px auto;
     }
 
     p {
       font-size: 20px;
-      text-align: center;
+      text-align: justify;
       margin: 10px 0;
     }
 
@@ -66,32 +67,208 @@ img.logo {
       color: #FF0000;
       text-decoration: none;
     }
-.top-right {
+
+    .top-right {
       position: absolute;
       top: 50px;
       right: 20px;
+    }
+
+    .box {
+      border: 2px solid #000;
+      background-color: #f0f8ff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    /* Custom styles for key points and concepts */
+    .concept {
+      background-color: #f4f4f4;
+      border-left: 5px solid #FBBBBB;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    /* Styling for images and diagrams */
+    .diagram {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    img.diagram-img {
+      max-width: 400px;
+      height: auto;
+    }
+
+    /* Additional styling for headings within sections */
+    h3 {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    /* Styling for key equations */
+    .equation {
+      font-size: 25px;
+      color: #FF0000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-size: 18px;
+      color: #666666;
+      font-style: italic;
+      text-align: justify;
+      padding: 10px;
+      margin: 20px 0;
+      border-left: 5px solid #FFCCCC;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-
 <a href="index.html">
-    <img class="logo" src="logo-transparent-png.png" alt="Apricity Studies Logo"></a>
-<font size = 5><a class="top-right" href="game.html">Need a break? <br>Play some games and relax!<br>(CLICK HERE)</a></font>
-<h1> UNIT 3 : Quadratics</h1>
-<p> Quadratics can be defined as a polynomial equation of a second degree, which implies that it comprises a minimum of one term that is squared. It is also called quadratic equations.
+  <img class="logo" src="logo-transparent-png.png" alt="Apricity Studies Logo">
+</a>
+
+<!-- Link to games -->
+<font size="5">
+  <a class="top-right" href="game.html">Need a break? <br>Play some games and relax!<br>(CLICK HERE)</a>
+</font>
+
+<h1>UNIT 3: Quadratic Functions</h1>
+
+<!-- Introductory paragraph -->
+<p>
+  Welcome to Unit 3: Quadratic Functions! In this section, we'll dive deep into the understanding of quadratic functions, exploring everything from vertex form to standard form, how to graph them, and how to interpret their behavior. Quadratic functions play a significant role in mathematics due to their unique U-shaped graph, known as a parabola. These functions are not only a fundamental part of algebra but also have real-world applications, making them essential for problem-solving.
 </p>
-<div style="border: 2px solid #000; background-color: #f0f8ff; padding: 20px; margin: 20px; border-radius: 10px;">
-<center><span style="font-size: 1.5em;">The general form of the quadratic equation is: <br>
- ax² + bx + c = 0 <center>
+
+<!-- Box for important formulas and concepts -->
+<div class="box">
+  <p class="equation" style="color: black; font-weight: bold;"> General Form of a Quadratic Equation is: <br> ax² + bx + c = 0</p>
 </div>
+
 <hr><br>
-<h2> Quadratic Functions </h2><br>
-<p>The graph of a quadratic function is a <b>parabola</b>. When the graph opens <b>upward</b>, the <b>vertex</b> is the <b>lowest point</b> on the graph. When the graph <b>opens downward, the vertex is the <b>highest point</b> on the graph. <br><br>
-<center><img src ="QE1.png"></center>
 
+<!-- Section for Quadratic Functions in Vertex Form -->
+<h2>Quadratic Functions in Vertex Form</h2>
+<div class="concept">
+  <p>
+    A quadratic function in vertex form can be expressed as:
+    <b>f(x) = a(x - p)<sup>2</sup> + q</b>. In this form:
+  </p>
+  <ul>
+    <li><b>a</b> determines the direction of the parabola and whether it is wide or narrow.</li>
+    <li><b>(p, q)</b> is the vertex, which tells us the highest or lowest point of the graph.</li>
+    <li>The axis of symmetry is the vertical line <b>x = p</b>.</li>
+    <li>The parabola is congruent to <b>f(x) = ax²</b>, translated horizontally by p units and vertically by q units.</li>
+  </ul>
 
+  <p class="quote">
+    Remember: If <b>a > 0</b>, the parabola opens upward, making the vertex the lowest point. If <b>a < 0</b>, the parabola opens downward, making the vertex the highest point.
+  </p>
+</div>
+
+<!-- Diagram for visualizing vertex form -->
+<div class="diagram">
+  <img class="diagram-img" src="1234.png" alt="Vertex Form Diagram">
+</div>
+
+<h3>Transforming f(x) = x² into Vertex Form</h3>
+<p>
+  To graph a quadratic function in vertex form, we start by transforming the graph of <b>f(x) = x²</b>. This transformation involves shifting the graph horizontally and vertically based on the values of <b>p</b> and <b>q</b>. Let’s break this down:
+</p>
+
+<ul>
+  <li>If <b>a > 0</b>, the parabola opens upward, and if <b>a < 0</b>, it opens downward.</li>
+  <li>If <b>-1 < a < 1</b>, the parabola is wider compared to the standard graph of <b>f(x) = x²</b>.</li>
+  <li>If <b>a > 1</b> or <b>a < -1</b>, the parabola becomes narrower.</li>
+</ul>
+
+<p>
+  The parameter <b>q</b> determines the vertical position of the parabola. A positive value for <b>q</b> shifts the graph upward, while a negative value shifts it downward. Similarly, the parameter <b>p</b> dictates the horizontal shift: a positive value moves the graph to the right, and a negative value moves it to the left.
+</p>
+
+<h3>Determining the Number of X-Intercepts</h3>
+<p>
+  One of the most important aspects of graphing a quadratic function is understanding how many times it crosses the x-axis, known as the x-intercepts. This can be determined by analyzing the values of <b>a</b> and <b>q</b>:
+</p>
+
+<ul>
+  <li>If <b>a > 0</b> and <b>q > 0</b>, the graph opens upward and the vertex is above the x-axis, meaning there are no x-intercepts.</li>
+  <li>If <b>a > 0</b> and <b>q = 0</b>, the vertex is on the x-axis, and there is exactly one x-intercept.</li>
+  <li>If <b>a > 0</b> and <b>q < 0</b>, the graph crosses the x-axis twice, resulting in two x-intercepts.</li>
+</ul>
+
+<hr>
+
+<!-- Section for Standard Form -->
+<h2>Quadratic Functions in Standard Form</h2>
+<p>
+  Quadratic functions can also be expressed in standard form, which is given by <b>f(x) = ax² + bx + c</b>, where <b>a</b> is non-zero. In this form:
+</p>
+
+<ul>
+  <li>The graph is a parabola that is symmetric about a vertical line called the <b>axis of symmetry</b>.</li>
+  <li>The y-intercept of the graph is the point <b>(0, c)</b>.</li>
+</ul>
+
+<!-- Equations related to the vertex and axis of symmetry -->
+<p class="equation" style="color: black; font-weight: bold;">The x-coordinate of the vertex is: <br> x = -b / 2a </p>
+
+<p>
+  The standard form is particularly useful for determining important features of the parabola such as the direction of opening, vertex, axis of symmetry, and the intercepts. By using these characteristics, we can sketch the graph of the quadratic function.
+</p>
+
+<!-- Additional diagram for standard form -->
+<div class="diagram">
+  <img class="diagram-img" src="standard.jpg" alt="Standard Form Parabola">
+</div>
+
+<h3>Application of Quadratic Functions in Real Life</h3>
+<p>
+  Quadratic functions are often used to model real-world situations. Some examples include:
+</p>
+
+<ul>
+  <li>The path of a ball thrown in the air can be modeled using a quadratic function.</li>
+  <li>The profit of a business based on the number of items sold can be represented by a quadratic function.</li>
+  <li>Quadratics are also used in architecture and engineering to design structures with parabolic arches.</li>
+</ul>
+
+<hr>
+
+<!-- Section on Completing the Square -->
+<h2>Converting Standard Form to Vertex Form: Completing the Square</h2>
+<p>
+  To convert a quadratic function from standard form to vertex form, we use a method called <b>completing the square</b>. This process involves manipulating the equation so that we can rewrite it in the form <b>f(x) = a(x - p)² + q</b>.
+</p>
+
+<p>Let’s look at an example:</p>
+
+<p class="equation" style="color: black; font-weight: bold;">y = 5x² - 30x + 7</p>
+
+<!-- Steps for completing the square -->
+<p>
+  Follow these steps to complete the square:
+</p>
+
+<ol>
+  <li>Factor out the coefficient of x² from the first two terms: <br> <b>y = 5(x² - 6x) + 7</b></li>
+  <li>Add and subtract a number to make the quadratic expression a perfect square trinomial: <br> <b>y = 5(x² - 6x + 9 - 9) + 7</b></li>
+  <li>Rewrite the trinomial as a square: <br> <b>y = 5[(x - 3)² - 9] + 7</b></li>
+  <li>Simplify the expression: <br> <b>y = 5(x - 3)² - 45 + 7</b></li>
+  <li>Final vertex form: <br> <b>y = 5(x - 3)² - 38</b></li>
+</ol>
+
+<p class="quote">
+  Converting the quadratic function to vertex form reveals that the vertex of the parabola is at <b>(3, -38)</b>, making it easier to understand the graph's behavior.
+</p>
+
+</div>
 </body>
 </html>
+
